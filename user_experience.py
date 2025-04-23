@@ -16,8 +16,9 @@ def choose_difficulty():
     """
     #------------------------
     # Add your code here
+    difficulty = input()
+    return difficulty
     #------------------------
-    raise NotImplementedError("This function is not implemented yet.")
     #------------------------
 
 #---------------------------------------
@@ -35,8 +36,15 @@ def display_leaderboard(leaderboard):
     """
     #------------------------
     # Add your code here
+    if not leaderboard:
+        print("nothing to display")
+        return
+    scores = sorted(leaderboard.values(), reverse= True)
+    print("Leaderboard:")
+    for x in scores:
+            print(str(x))
+    ###
     #------------------------
-    raise NotImplementedError("This function is not implemented yet.")
     #------------------------
 
 #---------------------------------------
@@ -54,8 +62,9 @@ def save_score(player_name, score, file_path='scores.txt'):
     """
     #------------------------
     # Add your code here
+    with open(file_path,"w") as file:
+        file.write(player_name + str(score))
     #------------------------
-    raise NotImplementedError("This function is not implemented yet.")
     #------------------------
 
 #---------------------------------------
@@ -93,8 +102,11 @@ def provide_feedback(is_correct):
     """
     #------------------------
     # Add your code here
+    if is_correct == True:
+        return "Well done!"
+    else:
+        return "Sorry, that's incorrect."
     #------------------------
-    raise NotImplementedError("This function is not implemented yet.")
     #------------------------
 
 #---------------------------------------
