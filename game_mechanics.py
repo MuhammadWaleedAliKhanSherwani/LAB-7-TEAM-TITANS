@@ -12,9 +12,9 @@ def welcome_message():
     Returns: None
     """
     #------------------------
-    # Add your code here
+    print('Welcome')
     #------------------------
-    raise NotImplementedError("This function is not implemented yet.")
+    #raise NotImplementedError("This function is not implemented yet.")
     #------------------------
 #---------------------------------------
     
@@ -64,9 +64,9 @@ def game_over_message(final_score):
     Returns: None
     """
     #------------------------
-    # Add your code here
     #------------------------
-    raise NotImplementedError("This function is not implemented yet.")
+    print('Welcome To The Game')
+    #raise NotImplementedError("This function is not implemented yet.")
     #------------------------
 
 #---------------------------------------
